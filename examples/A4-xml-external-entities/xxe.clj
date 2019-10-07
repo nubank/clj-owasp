@@ -1,5 +1,5 @@
 (ns playground
-  (:require [clojure.data.xml :as xml]))
+  (:require [clojure.xml :as xml]))
 
 (defn parse-document [xml-document] 
   (xml/parse xml-document))
