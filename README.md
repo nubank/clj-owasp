@@ -1,4 +1,4 @@
-# OWASP TOP 10 Presentation
+# OWASP TOP 10
 
 Presentation about OWASP Top 10. All the texts from the vulnerabilities were extracted from the official document.
 
