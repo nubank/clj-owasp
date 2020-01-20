@@ -22,11 +22,11 @@ In this example our application does the following:
 
 The main problem here is the `read-string` function which basically transform strings into Clojure objects. If you provide `"(+ 1 1)` to the `read-string` it will return a Clojure form that can be evaluated with `eval`.
 
-```clojure
+```
 (eval (read-string "(+ 1 1)"))
 => 2
 ```
-Another approach is to use the (`reader eval #=`)[https://clojure.org/guides/weird_characters#_reader_eval] which will evaluate the form in read time.
+Another approach is to use the [`reader eval #=`](https://clojure.org/guides/weird_characters#_reader_eval) which will evaluate the form in read time.
 
 ```clojure
 (read-string "#=(+ 1 1)")
