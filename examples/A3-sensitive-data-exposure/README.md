@@ -5,6 +5,8 @@ Many web applications and APIs do not properly protect sensitive data, such as f
 This is a dummy example of a lambda which receives two value, input and components and only print it.
 
 ```clojure
+(ns sensitive-data-exposure)
+
 (def components
   "Statically defined, potentially expensive config / objects go here"
   (let [jetty-client (aws/default-http-client)
