@@ -3,7 +3,7 @@ XSS flaws occur whenever an application includes untrusted data in a new web pag
 
 # Example
 This dummy example generate a welcome page based on the username.
-```
+```clojure
 (def logged-user-template "<html>
                           <head> <title>Welcome</title> </head>
                           <body> 
