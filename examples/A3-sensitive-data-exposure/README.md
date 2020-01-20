@@ -25,9 +25,5 @@ This is a dummy example of a lambda which receives two value, input and componen
 The main problem here is the `vis/info` function that is logging the components. This is a map which in this case contains a sensitive token from Okta.
 This problem is most seeing during the development phase.
 
-```clojure
-(generate-rsa-key {:key-name"; touch /tmp/a1/hacked #"})
-```
-
 # Fix
 Never log secrets but if it was necessary always rotate it.
