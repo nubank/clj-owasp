@@ -21,7 +21,7 @@ In this example our application reaches a third-party API, receives a XML docume
 
 The main problem here is the `xml/parse` function which by default evaluate external entity references. So if our third-party gets compromised or have some internal attacker we could receive a malicious payload like the following.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE client [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <client>
@@ -37,7 +37,7 @@ That basically will make our parser evaluate the **ENTITY** reference and return
 # Fix
 In order to fix this problem all you need to do is instance a sax parser with the `DOCTYPE` resolver disabled. This way the entity will never be evaluated. 
 
-```
+```clojure
 (ns sensitive-data-exposure 
   (:require [clojure.xml :as xml]))
 
