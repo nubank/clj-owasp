@@ -10,6 +10,6 @@ OWASP (Open Web Application Security Project) is an organization that provides u
 # What's OWASP TOP 10
 The OWASP Top 10 is a powerful awareness document for web application security. It represents a broad consensus about the most critical security risks to web applications. Project members include a variety of security experts from around the world who have shared their expertise to produce this list.
 
-![width:900px](../images/top10-2013-vs-2017.png)
+![width:900px](images/top10-2013-vs-2017.png)
 
 
