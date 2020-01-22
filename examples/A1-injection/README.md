@@ -27,3 +27,9 @@ In order to exploit this code all you have to do is append bash commands on the 
 
 # Fix
 If you use the user input on your command never use the `bash -c` it allows the usage of bash functionalities like the semicolon which invoke another command after the previous one.
+
+```clojure
+(defn generate-rsa-key [{:keys [key-name]}]
+  (let [key (str key-path key-name) ]
+    (sh "openssl" "genrsa" "-out"  key " 2048")))
+```
