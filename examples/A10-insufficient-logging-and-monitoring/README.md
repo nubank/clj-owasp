@@ -15,7 +15,7 @@ In this dummy example the function login is responsible for authentication.
     true
     false))
 
-(login {:username "matheus.bernardes" :password "banana1" :ipaddress 187.115.25.164}
+(login {:username "matheus.bernardes" :password "banana1" :ipaddress "187.115.25.164"}
 ```
 
 This code does not **log** how many times an user tried to login. This way an attacker could perform a brute force attack in order to discover an user password.
