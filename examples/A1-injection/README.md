@@ -13,8 +13,8 @@ This code basically receives a certificate name and generates a RSA key in the `
 
 (defn generate-rsa-key [{:keys [key-name]}]
   (let [key (str key-path key-name)
-        command (str "openssl genrsa -out " key)]
-    (sh "bash" "-c" command "2048")))
+        command (str "openssl genrsa -out " key " 2048")]
+    (sh "bash" "-c" command)))
 
 (generate-rsa-key {:key-name "certificate"})
 ```
