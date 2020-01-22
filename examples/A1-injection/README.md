@@ -2,7 +2,7 @@
 Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
 
 # Example
-This code basically receives a certificate name and generates a RSA key the `/tmp/a1/` path. 
+This code basically receives a certificate name and generates a RSA key in the `/tmp/a1/` path. 
 
 ```clojure
 (ns injection)
